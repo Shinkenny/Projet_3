@@ -1,0 +1,12 @@
+footer
+{
+	width: 100%;
+	position: fixed;
+    right: 0px;
+    bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+	font-size: nth($font-size, 3);
+	display: inline-flex;
+	justify-content: space-between;
+	background-color: $colorbackground-primary;
+}

@@ -1,0 +1,81 @@
+.M_M1
+{
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+	padding: 50px;
+	background-color: $color-menu1;
+	box-shadow:  0px 0px 10px #c9c9c9;
+	font-family: 'Kalam', cursive;
+	color: #3d1319;
+}
+
+.la_note
+{
+	text-align: center;
+	margin-top: -15px;
+}
+
+.titre_menu_1
+{
+	font-size: nth($font-size, 2);
+	font-family: 'Devonshire', cursive;
+}
+
+.entrees, .plats_principaux, .desserts
+{
+	font-size: nth($font-size, 3);
+}
+
+.noms
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: $f-size_noms-plats;
+}
+
+.plat
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: $f-size_noms-plats;
+}
+
+.prix
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: $f-size_noms-plats;
+	font-weight: bold;
+}
+
+.fin
+{
+	display: inline-flex;
+	padding-top: 20px;
+	font-family: 'Devonshire', cursive;
+	font-size: nth($font-size, 3);
+}
+
+.note_size_small
+{
+	font-size: 2.5rem;
+	padding-top: 25px;
+	padding-right: 15px;
+}
+
+/* Version Mobile */
+@media all and (max-width: 767px)
+{
+	.M_M1
+	{
+		width: 90%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 150px;
+		padding: 10px;
+	}
+}

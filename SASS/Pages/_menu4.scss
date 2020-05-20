@@ -1,0 +1,57 @@
+.M_M4
+{
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+	padding: 50px;
+	background-color: $color-menu4;
+	box-shadow:  0px 0px 10px #c9c9c9;
+	font-family: 'Kalam', cursive;
+}
+
+/*.G_M4
+{
+	@include font-color_m4v();
+}*/
+
+.la_palette
+{
+	text-align: center;
+	margin-top: -15px;
+}
+
+.titre_menu_4
+{
+	font-size: nth($font-size, 2);
+	font-family: 'Kaushan Script', cursive;
+	@include font-color_m4();
+}
+
+.entrees, .plats_principaux, .desserts
+{
+	font-size: nth($font-size, 3);
+}
+
+.noms
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: $f-size_noms-plats;
+}
+
+.plat
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: $f-size_noms-plats;
+}
+
+.prix
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: $f-size_noms-plats;
+	font-weight: bold;
+}
