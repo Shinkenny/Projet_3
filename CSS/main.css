@@ -1,3 +1,7 @@
+/* Pour le menu 1 */
+/* Pour le menu 2 */
+/* Pour le menu 3 */
+/* Pour le menu 4 */
 header {
   width: 100%;
   color: #fdcb46;
@@ -12,11 +16,14 @@ footer {
   position: fixed;
   right: 0px;
   bottom: 0px;
+  height: 50px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   display: inline-flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: #579c87; }
+  background-color: #579c87;
+  z-index: 2; }
 
 main {
   width: 60%;
@@ -42,6 +49,27 @@ main {
 .titre_menu_1 {
   font-size: 2rem;
   font-family: 'Devonshire', cursive; }
+
+.titre1 {
+  text-align: center;
+  position: relative; }
+
+.titre1:before {
+  content: "";
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #3d1319;
+  position: absolute;
+  top: calc(50% - 1px); }
+
+.titre1 span {
+  display: inline-block;
+  padding: 0 40px;
+  background: #fcdfdb;
+  position: relative;
+  z-index: 1;
+  width: 175px; }
 
 .entrees, .plats_principaux, .desserts {
   font-size: 1.5rem; }
@@ -93,12 +121,7 @@ main {
   box-shadow: 0px 0px 10px #c9c9c9; }
 
 .G_M2 {
-  font-family: 'Playfair Display', serif;
-  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0, #ed8c18), color-stop(0.95, #8f5aff));
-  background-image: gradient(linear, center top, center bottom, color-stop(0, #ed8c18), color-stop(0.95, #8f5aff));
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text; }
+  font-family: 'Playfair Display', serif; }
 
 .le_chic {
   text-align: center;
@@ -113,8 +136,38 @@ main {
   -webkit-background-clip: text;
   background-clip: text; }
 
-.entrees, .plats_principaux, .desserts {
+.titre2 {
+  text-align: center;
+  position: relative; }
+
+.titre2:before {
+  content: "";
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #c67412;
+  position: absolute;
+  top: calc(50% - 1px); }
+
+.titre2 span {
+  display: inline-block;
+  padding: 0 40px;
+  background: #fff5fe;
+  position: relative;
+  z-index: 1;
+  width: 285px; }
+
+.entrees2, .plats_principaux2, .desserts2 {
   font-size: 1.5rem; }
+
+.entrees2 {
+  color: #c67412; }
+
+.plats_principaux2 {
+  color: #a56799; }
+
+.desserts2 {
+  color: #6e4ccc; }
 
 .noms {
   display: flex;
@@ -160,6 +213,27 @@ main {
   -webkit-background-clip: text;
   background-clip: text; }
 
+.titre3 {
+  text-align: center;
+  position: relative; }
+
+.titre3:before {
+  content: "";
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #229df9;
+  position: absolute;
+  top: calc(50% - 1px); }
+
+.titre3 span {
+  display: inline-block;
+  padding: 0 40px;
+  background: #f9f9f9;
+  position: relative;
+  z-index: 1;
+  width: 230px; }
+
 .entrees, .plats_principaux, .desserts {
   font-size: 2rem; }
 
@@ -201,11 +275,32 @@ main {
 .titre_menu_4 {
   font-size: 2rem;
   font-family: 'Kaushan Script', cursive;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-  background-image: gradient(linear, left top, right top, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
+  background-image: gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text; }
+
+.titre4 {
+  text-align: center;
+  position: relative; }
+
+.titre4:before {
+  content: "";
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: radial-gradient(circle at 50%, #beff7f, #beff7f 60%, #3e923a 90%, #3e923a 80%);
+  position: absolute;
+  top: calc(50% - 1px); }
+
+.titre4 span {
+  display: inline-block;
+  padding: 0 40px;
+  background: #fdfffd;
+  position: relative;
+  z-index: 1;
+  width: 200px; }
 
 .entrees, .plats_principaux, .desserts {
   font-size: 1.5rem; }
@@ -263,58 +358,33 @@ a {
   flex-wrap: wrap;
   width: 90%;
   margin: auto; }
-
-.menu1 {
-  width: 300px;
-  border: solid 1px #fcdfdb;
-  background-color: #fcdfdb;
-  box-shadow: 0px 0px 10px #c9c9c9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px;
-  margin: 30px;
-  font-family: 'Devonshire', cursive;
-  color: #3d1319; }
-
-.menu2 {
-  width: 300px;
-  border: solid 1px #fff5fe;
-  background-color: #fff5fe;
-  box-shadow: 0px 0px 10px #c9c9c9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px;
-  margin: 30px;
-  font-family: 'Amita', cursive;
-  color: #c77412; }
-
-.menu3 {
-  width: 300px;
-  border: solid 1px #f9f9f9;
-  background-color: #f9f9f9;
-  box-shadow: 0px 0px 10px #c9c9c9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px;
-  margin: 30px;
-  font-family: 'Dancing Script', cursive;
-  color: #0887fb; }
-
-.menu4 {
-  width: 300px;
-  border: solid 1px #fdfffd;
-  background-color: #fdfffd;
-  box-shadow: 0px 0px 10px #c9c9c9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px;
-  margin: 30px;
-  font-family: 'Kaushan Script', cursive;
-  color: #7bc361; }
+  .menus__menu {
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px #c9c9c9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px #fcdfdb;
+    background-color: #fcdfdb;
+    font-family: 'Devonshire', cursive;
+    color: #3d1319; }
+  .menus__menu--2 {
+    border: solid 1px #fff5fe;
+    background-color: #fff5fe;
+    font-family: 'Amita', cursive;
+    color: #c77412; }
+  .menus__menu--3 {
+    border: solid 1px #f9f9f9;
+    background-color: #f9f9f9;
+    font-family: 'Dancing Script', cursive;
+    color: #0887fb; }
+  .menus__menu--4 {
+    border: solid 1px #fdfffd;
+    background-color: #fdfffd;
+    font-family: 'Kaushan Script', cursive;
+    color: #7bc361; }
 
 .c_font2 {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e38a12), color-stop(0.85, #8f5aff));
@@ -331,8 +401,8 @@ a {
   background-clip: text; }
 
 .c_font4 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-  background-image: gradient(linear, left top, right top, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
+  background-image: gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text; }

@@ -29,6 +29,33 @@
 	@include font-color_m4();
 }
 
+.titre4 
+{
+    text-align: center;
+    position: relative;
+}
+
+.titre4:before 
+{
+    content: "";
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: radial-gradient(circle at 50%, #beff7f, #beff7f 60%, #3e923a 90%, #3e923a 80%);
+    position: absolute;
+    top: calc(50% - 1px);
+}
+
+.titre4 span 
+{
+    display: inline-block;
+    padding: 0 40px;
+    background: $color-menu4;
+    position: relative;
+    z-index: 1;
+    width: 200px;
+}
+
 .entrees, .plats_principaux, .desserts
 {
 	font-size: nth($font-size, 3);

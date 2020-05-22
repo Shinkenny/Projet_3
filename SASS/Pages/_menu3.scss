@@ -29,6 +29,33 @@
 	@include font-color_m3();
 }
 
+.titre3
+{
+    text-align: center;
+    position: relative;
+}
+
+.titre3:before 
+{
+    content: "";
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #229df9;
+    position: absolute;
+    top: calc(50% - 1px);
+}
+
+.titre3 span 
+{
+    display: inline-block;
+    padding: 0 40px;
+    background: $color-menu3;
+    position: relative;
+    z-index: 1;
+    width: 230px;
+}
+
 .entrees, .plats_principaux, .desserts
 {
 	font-size: nth($font-size, 2);

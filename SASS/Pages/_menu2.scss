@@ -13,7 +13,6 @@
 .G_M2
 {
 	font-family: 'Playfair Display', serif;
-	@include font-color_m2v();
 }
 
 .le_chic
@@ -29,9 +28,51 @@
 	@include font-color_m2h();
 }
 
-.entrees, .plats_principaux, .desserts
+.titre2 
+{
+    text-align: center;
+    position: relative;
+}
+
+.titre2:before 
+{
+    content: "";
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #c67412;
+    position: absolute;
+    top: calc(50% - 1px);
+}
+
+.titre2 span 
+{
+    display: inline-block;
+    padding: 0 40px;
+    background: $color-menu2;
+    position: relative;
+    z-index: 1;
+    width: 285px;
+}
+
+.entrees2, .plats_principaux2, .desserts2
 {
 	font-size: nth($font-size, 3);
+}
+
+.entrees2
+{
+	color: #c67412;
+}
+
+.plats_principaux2
+{
+	color: #a56799;
+}
+
+.desserts2
+{
+	color: #6e4ccc;
 }
 
 .noms

@@ -24,6 +24,33 @@
 	font-family: 'Devonshire', cursive;
 }
 
+.titre1 
+{
+    text-align: center;
+    position: relative;
+}
+
+.titre1:before 
+{
+    content: "";
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #3d1319;
+    position: absolute;
+    top: calc(50% - 1px);
+}
+
+.titre1 span 
+{
+    display: inline-block;
+    padding: 0 40px;
+    background: $color-menu1;
+    position: relative;
+    z-index: 1;
+    width: 175px;
+}
+
 .entrees, .plats_principaux, .desserts
 {
 	font-size: nth($font-size, 3);

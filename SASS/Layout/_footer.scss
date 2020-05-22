@@ -4,9 +4,12 @@ footer
 	position: fixed;
     right: 0px;
     bottom: 0px;
+    height: 50px;
     font-family: 'Roboto', sans-serif;
 	font-size: nth($font-size, 3);
 	display: inline-flex;
+	align-items: center;
 	justify-content: space-between;
 	background-color: $colorbackground-primary;
+	z-index: 2;
 }

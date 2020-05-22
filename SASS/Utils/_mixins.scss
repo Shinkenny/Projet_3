@@ -1,3 +1,14 @@
+/* Pour le menu 1 */
+@mixin note-color_m1()
+{
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
+    background-image: gradient( linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Pour le menu 2 */
 @mixin font-color_m2h()
 {
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #e38a12), color-stop(0.85, #8f5aff));
@@ -16,6 +27,7 @@
     background-clip: text;
 }
 
+/* Pour le menu 3 */
 @mixin font-color_m3()
 {
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
@@ -34,10 +46,11 @@
     background-clip: text;
 }
 
+/* Pour le menu 4 */
 @mixin font-color_m4()
 {
-	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-    background-image: gradient( linear, left top, right top, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
+	background-image: -webkit-gradient( linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
+    background-image: gradient( linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
