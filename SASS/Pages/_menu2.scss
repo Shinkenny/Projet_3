@@ -1,15 +1,3 @@
-.M_M2
-{
-	width: 50%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 150px;
-	padding: 50px;
-	background-color: $color-menu2;
-	box-shadow:  0px 0px 10px #c9c9c9;
-}
-
 .G_M2
 {
 	font-family: 'Playfair Display', serif;
@@ -28,36 +16,19 @@
 	@include font-color_m2h();
 }
 
-.titre2 
+.box_barres2
 {
-    text-align: center;
-    position: relative;
-}
-
-.titre2:before 
-{
-    content: "";
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: #c67412;
-    position: absolute;
-    top: calc(50% - 1px);
-}
-
-.titre2 span 
-{
-    display: inline-block;
-    padding: 0 40px;
-    background: $color-menu2;
-    position: relative;
-    z-index: 1;
-    width: 285px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .entrees2, .plats_principaux2, .desserts2
 {
-	font-size: nth($font-size, 3);
+	font-size: 1.2rem;
+    width: 100%;
 }
 
 .entrees2
@@ -75,24 +46,16 @@
 	color: #6e4ccc;
 }
 
-.noms
+.barre_G2
 {
-	display: flex;
-	justify-content: space-between;
-	font-size: $f-size_noms-plats;
+    width: 150px;
+    height: 10px;
+    margin-top: 5px;
 }
 
-.plat
+.barre_D2
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: $f-size_noms-plats;
-}
-
-.prix
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: $f-size_noms-plats;
-	font-weight: bold;
+    width: 150px;
+    height: 10px;
+    margin-top: 5px;
 }

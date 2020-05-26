@@ -13,3 +13,14 @@ footer
 	background-color: $colorbackground-primary;
 	z-index: 2;
 }
+
+/* Version Mobile et tablette */
+@media all and (max-width: 767px)
+{
+	footer
+	{
+		height: 60px;
+		font-size: nth($font-size, 4);
+		text-align: center;
+	}
+}

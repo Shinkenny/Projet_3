@@ -1,15 +1,39 @@
-.M_M1
+.M_Menu
 {
-	width: 50%;
+	width: $menu-width/2;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 150px;
-	padding: 50px;
-	background-color: $color-menu1;
-	box-shadow:  0px 0px 10px #c9c9c9;
-	font-family: 'Kalam', cursive;
-	color: #3d1319;
+	&__num
+	{
+		margin-bottom: 150px;
+		padding: 40px;
+		box-shadow:  0px 0px 10px #c9c9c9;
+	}
+	&__num--1
+	{
+		background-color: $color-menu1;
+		font-family: 'Kalam', cursive;
+		color: #3d1319;
+	}
+	&__num--2
+	{
+		background-color: $color-menu2;
+	}
+	&__num--3
+	{
+		background-color: $color-menu3;
+		font-family: 'Kalam', cursive;
+	}
+	&__num--4
+	{
+		background-color: $color-menu4;
+		font-family: 'Kalam', cursive;
+	}
 }
 
 .la_note
@@ -24,36 +48,37 @@
 	font-family: 'Devonshire', cursive;
 }
 
-.titre1 
+.box_barres
 {
-    text-align: center;
-    position: relative;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+    align-items: center;
 }
 
-.titre1:before 
+.intitule
 {
-    content: "";
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: #3d1319;
-    position: absolute;
-    top: calc(50% - 1px);
+	width: 60%;
 }
 
-.titre1 span 
+.barre_G1
 {
-    display: inline-block;
-    padding: 0 40px;
-    background: $color-menu1;
-    position: relative;
-    z-index: 1;
-    width: 175px;
+	width: 200px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.barre_D1
+{
+	width: 200px;
+	height: 50px;
+	margin-top: 5px;
 }
 
 .entrees, .plats_principaux, .desserts
 {
 	font-size: nth($font-size, 3);
+	width: 100%;
 }
 
 .noms
@@ -61,20 +86,20 @@
 	display: flex;
 	justify-content: space-between;
 	font-size: $f-size_noms-plats;
+	padding: 0px 25px;
+	margin-top: -20px;
 }
 
 .plat
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: $f-size_noms-plats;
+	margin-bottom: 30px;
+	text-align: left;
 }
 
 .prix
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: $f-size_noms-plats;
+	margin-bottom: 30px;
+	margin-left: 5px;
 	font-weight: bold;
 }
 
@@ -93,16 +118,36 @@
 	padding-right: 15px;
 }
 
-/* Version Mobile */
+/* Version tablette */
+@media all and (max-width: 1024px)
+{
+	.M_M
+	{
+		width: $menu-width;
+	}
+}
+
+/* Version mobile */
 @media all and (max-width: 767px)
 {
-	.M_M1
+	.titre_menu_1
 	{
-		width: 90%;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 150px;
-		padding: 10px;
+		font-size: nth($font-size, 3);
+	}
+
+	.entrees, .plats_principaux, .desserts
+	{
+		font-size: nth($font-size, 4);
+	}
+
+	.noms
+	{
+		font-size: $f-size_noms-plats/1.2;
+	}
+
+	.fin
+	{
+		padding-top: 20px;
+		font-size: nth($font-size, 4);
 	}
 }

@@ -1,16 +1,3 @@
-.M_M3
-{
-	width: 50%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 150px;
-	padding: 50px;
-	background-color: $color-menu3;
-	box-shadow:  0px 0px 10px #c9c9c9;
-	font-family: 'Kalam', cursive;
-}
-
 /*.G_M3
 {
 	@include font-color_m3v();	
@@ -29,56 +16,16 @@
 	@include font-color_m3();
 }
 
-.titre3
+.barre_G3
 {
-    text-align: center;
-    position: relative;
+    width: 170px;
+    height: 50px;
+    margin-top: 5px;
 }
 
-.titre3:before 
+.barre_D3
 {
-    content: "";
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: #229df9;
-    position: absolute;
-    top: calc(50% - 1px);
-}
-
-.titre3 span 
-{
-    display: inline-block;
-    padding: 0 40px;
-    background: $color-menu3;
-    position: relative;
-    z-index: 1;
-    width: 230px;
-}
-
-.entrees, .plats_principaux, .desserts
-{
-	font-size: nth($font-size, 2);
-}
-
-.noms
-{
-	display: flex;
-	justify-content: space-between;
-	font-size: $f-size_noms-plats;
-}
-
-.plat
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: $f-size_noms-plats;
-}
-
-.prix
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: $f-size_noms-plats;
-	font-weight: bold;
+    width: 170px;
+    height: 50px;
+    margin-top: 5px;
 }

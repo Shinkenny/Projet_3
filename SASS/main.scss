@@ -61,7 +61,7 @@ a:active
 
 main
 {
-
+	width: 60%;
 }
 
 .note_size
@@ -86,17 +86,18 @@ main
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 90%;
+	width: $menu-width;
 	margin: auto;
 	&__menu
 	{
-	width: 300px;
-	height: 400px;
+	width: 320px;
+	height: 420px;
     margin: 30px;
     box-shadow:  0px 0px 10px #c9c9c9;
 	display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: solid 1px $color-menu1;
 	background-color: $color-menu1;
 	font-family: 'Devonshire', cursive;
@@ -123,6 +124,21 @@ main
     font-family: 'Kaushan Script', cursive;
     color: #7bc361;
 	}
+}
+
+.anim_menu
+{
+	width: 300px;
+	height: 400px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	transform: scale(1);
+    transition: transform 400ms;
+    &:hover
+    {
+        transform: scale(1.15);
+    }
 }
 
 .c_font2
@@ -157,30 +173,56 @@ main
 
 .soon
 {
-	width: 200px;
+	width: 280px;
+	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: 100px;
-	padding: 1px;
-	color: $textcolor-primary;
-	font-size: nth($font-size, 4);
 	background-color: $colorbackground-primary;
 	border-radius: 15px 10px;
-	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	&__prochainement
+	{
+		font-size: nth($font-size, 3);
+		color: $textcolor-primary;
+	}
 }
 
-
-/* Version Mobile et tablette */
-@media all and (max-width: 768px)
+/* Version tablette */
+@media all and (max-width: 1024px)
 {
-	.menu1, .menu2, .menu3, .menu4
+	.menus
 	{
-		width: 250px;
+		width: $menu-width;
+		&__menu
+		{
+			width: 245px;
+			height: 350px;
+			align-items: center;
+		}
 	}
 
 	.soon
 	{
-		margin-bottom: 120px;
+		margin-bottom: 100px;
+		width: 240px;
+	}
+}
+
+/* Version mobile */
+@media all and (max-width: 767px)
+{
+	.soon
+	{
+		margin-bottom: 80px;
+		width: 180px;
+		height: 35px;
+	&__prochainement
+	{
+		font-size: nth($font-size, 4);
+	}
 	}
 }
