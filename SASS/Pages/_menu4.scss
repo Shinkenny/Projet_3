@@ -29,3 +29,115 @@
     height: 50px;
     margin-top: 5px;
 }
+
+/* Desktop 1440 */
+@media all and (max-width: 1440px)
+{
+	.G_M4
+	{
+		width: 100%;
+	}
+
+	.intitule
+	{
+		width: 60%;
+	}
+
+	.barre_G4
+	{
+		width: 155px;
+		height: 40px;
+		margin-top: 5px;
+	}
+
+	.barre_D4
+	{
+		width: 155px;
+		height: 40px;
+		margin-top: 5px;
+	}	
+}
+
+/* Desktop 1024 */
+@media all and (max-width: 1339px)
+{
+	.box_barres
+	{
+	    margin-bottom: 20px;
+	}
+
+	.barre_G4
+	{
+		width: 160px;
+		height: 35px;
+		margin-top: 5px;
+	}
+
+	.barre_D4
+	{
+		width: 160px;
+		height: 35px;
+		margin-top: 5px;
+	}
+
+	.titre_menu_4
+	{
+		font-size: nth($font-size, 3);
+	}
+}
+
+/* Version tablette */
+@media all and (max-width: 768px)
+{
+	.barre_G4
+	{
+		width: 105px;
+		height: 25px;
+		margin-top: 5px;
+	}
+
+	.barre_D4
+	{
+		width: 105px;
+		height: 25px;
+		margin-top: 5px;
+	}
+}
+
+/* Version mobile */
+@media all and (max-width: 767px)
+{
+	.titre_menu_4
+	{
+		font-size: nth($font-size, 3);
+	}
+
+	.intitule
+	{
+		width: 50%;
+	}
+
+	.barre_G4
+	{
+		width: 75px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.barre_D4
+	{
+		width: 75px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.entrees, .plats_principaux, .desserts
+	{
+		font-size: nth($font-size, 4);
+	}
+
+	.noms
+	{
+		font-size: $f-size_noms-plats/1.2;
+	}
+}

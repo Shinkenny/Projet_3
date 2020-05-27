@@ -1,3 +1,13 @@
+.main1
+{
+	width: 60%;
+}
+
+.G_M1
+{
+	width: 100%;
+}
+
 .M_Menu
 {
 	width: $menu-width/2;
@@ -42,6 +52,12 @@
 	margin-top: -15px;
 }
 
+.note_size1
+{
+	font-size: nth($font-size, 1);
+	margin-bottom: -40px;
+}
+
 .titre_menu_1
 {
 	font-size: nth($font-size, 2);
@@ -54,6 +70,7 @@
 	display: inline-flex;
 	justify-content: space-between;
     align-items: center;
+    margin-bottom: 2px;
 }
 
 .intitule
@@ -99,7 +116,7 @@
 .prix
 {
 	margin-bottom: 30px;
-	margin-left: 5px;
+	margin-left: 10px;
 	font-weight: bold;
 }
 
@@ -118,21 +135,152 @@
 	padding-right: 15px;
 }
 
-/* Version tablette */
-@media all and (max-width: 1024px)
+/* Desktop 1440 */
+@media all and (max-width: 1440px)
 {
-	.M_M
+	.main1
 	{
-		width: $menu-width;
+		width: 70%;
+	}
+
+	.G_M1
+	{
+		width: 100%;
+	}
+}
+
+/* Desktop 1024 */
+@media all and (max-width: 1339px)
+{
+	.main1
+	{
+		width: 90%;
+	}
+
+	.box_barres
+	{
+	    margin-bottom: 20px;
+	}
+
+	.intitule
+	{
+		width: 40%;
+	}
+
+	.barre_G1
+	{
+		width: 170px;
+		height: 40px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 170px;
+		height: 40px;
+		margin-top: 5px;
+	}
+
+	.titre_menu_1
+	{
+		font-size: nth($font-size, 3);
+	}
+
+	.entrees, .plats_principaux, .desserts
+	{
+		font-size: nth($font-size, 4);
+	}
+
+	.noms
+	{
+		font-size: $f-size_noms-plats/1.1;
+	}
+}
+
+/* Version tablette */
+@media all and (max-width: 768px)
+{
+	.noms
+	{
+		flex-direction: column;
+	}
+
+	.plat
+	{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.prix
+	{
+		margin-bottom: 40px;
+		margin-top: -25px;
+		margin-left: 0px;
+		font-weight: bold;
+	}
+
+	.main1
+	{
+		width: 90%;
+	}
+
+	.barre_G1
+	{
+		width: 110px;
+		height: 25px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 110px;
+		height: 25px;
+		margin-top: 5px;
 	}
 }
 
 /* Version mobile */
 @media all and (max-width: 767px)
 {
+	.M_Menu
+	{
+		width: 80%;
+		padding: 5px;
+	}
+
+	.main1
+	{
+		width: 100%;
+	}
+
+	.note_size1
+	{
+		font-size: nth($font-size, 1)/1.5;
+		margin-bottom: -35px;
+	}
+
 	.titre_menu_1
 	{
 		font-size: nth($font-size, 3);
+	}
+
+	.intitule
+	{
+		width: 50%;
+	}
+
+	.barre_G1
+	{
+		width: 65px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 65px;
+		height: 20px;
+		margin-top: 5px;
 	}
 
 	.entrees, .plats_principaux, .desserts
@@ -147,7 +295,15 @@
 
 	.fin
 	{
-		padding-top: 20px;
+		padding-top: 0px;
+		margin-top: -20px;
 		font-size: nth($font-size, 4);
+	}
+
+	.note_size_small
+	{
+		font-size: 2rem;
+		padding-top: 15px;
+		padding-right: 15px;
 	}
 }
