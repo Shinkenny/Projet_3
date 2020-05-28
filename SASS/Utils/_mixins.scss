@@ -4,7 +4,7 @@
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
     background-image: gradient( linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
     color:transparent;
-    -webkit-background-clip: text;
+
     background-clip: text;
 }
 
@@ -23,8 +23,13 @@
 	background-image: -webkit-gradient( linear, center top, center bottom, color-stop(0, #ed8c18), color-stop(0.95, #8f5aff));
     background-image: gradient( linear, center top, center bottom, color-stop(0, #ed8c18), color-stop(0.95, #8f5aff));
     color:transparent;
-    -webkit-background-clip: text;
+
     background-clip: text;
+}
+
+@mixin underline-color2()
+{
+    background: linear-gradient(217deg, #8f5aff, #ed8c18 70.71%)
 }
 
 /* Pour le menu 3 */
@@ -33,7 +38,7 @@
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
     background-image: gradient( linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
     color:transparent;
-    -webkit-background-clip: text;
+
     background-clip: text;
 }
 
@@ -42,8 +47,13 @@
 	background-image: -webkit-gradient( linear, center top, center bottom, color-stop(0, #0229dd), color-stop(0.95, #2c99fb));
     background-image: gradient( linear, center top, center bottom, color-stop(0, #0229dd), color-stop(0.95, #2c99fb));
     color:transparent;
-    -webkit-background-clip: text;
+
     background-clip: text;
+}
+
+@mixin underline-color3()
+{
+    background: linear-gradient(217deg, #2c99fb, #0229dd 70.71%)
 }
 
 /* Pour le menu 4 */
@@ -52,7 +62,7 @@
 	background-image: -webkit-gradient( linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
     background-image: gradient( linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
     color:transparent;
-    -webkit-background-clip: text;
+
     background-clip: text;
 }
 
@@ -61,6 +71,11 @@
 	background-image: -webkit-gradient( linear, center top, center bottom, color-stop(0, #3e923a), color-stop(0.95, #beff7f));
     background-image: gradient( linear, center top, center bottom, color-stop(0, #3e923a), color-stop(0.95, #beff7f));
     color:transparent;
-    -webkit-background-clip: text;
+
     background-clip: text;
+}
+
+@mixin underline-color4()
+{
+    background: linear-gradient(0.25turn, #beff7f, #3e923a, #beff7f);
 }

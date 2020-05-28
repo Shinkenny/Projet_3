@@ -73,9 +73,28 @@
     margin-bottom: 2px;
 }
 
-.intitule
+.intitule1
 {
-	width: 60%;
+	position: relative;
+}
+
+.intitule1:before
+{
+	content: "";
+  	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: #3d1319;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.intitule1:hover:before
+{
+	visibility: visible;
+  	width: 100%;
 }
 
 .barre_G1
@@ -160,11 +179,6 @@
 	.box_barres
 	{
 	    margin-bottom: 20px;
-	}
-
-	.intitule
-	{
-		width: 40%;
 	}
 
 	.barre_G1
@@ -262,11 +276,6 @@
 	.titre_menu_1
 	{
 		font-size: nth($font-size, 3);
-	}
-
-	.intitule
-	{
-		width: 50%;
 	}
 
 	.barre_G1

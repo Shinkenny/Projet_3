@@ -87,8 +87,23 @@ main {
   align-items: center;
   margin-bottom: 2px; }
 
-.intitule {
-  width: 60%; }
+.intitule1 {
+  position: relative; }
+
+.intitule1:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #3d1319;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+.intitule1:hover:before {
+  visibility: visible;
+  width: 100%; }
 
 .barre_G1 {
   width: 200px;
@@ -145,9 +160,6 @@ main {
 
   .box_barres {
     margin-bottom: 20px; }
-
-  .intitule {
-    width: 40%; }
 
   .barre_G1 {
     width: 170px;
@@ -210,9 +222,6 @@ main {
   .titre_menu_1 {
     font-size: 1.5rem; }
 
-  .intitule {
-    width: 50%; }
-
   .barre_G1 {
     width: 65px;
     height: 20px;
@@ -274,15 +283,36 @@ main {
 .desserts2 {
   color: #6e4ccc; }
 
+.intitule2 {
+  position: relative;
+  padding-bottom: 5px; }
+
+.intitule2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(217deg, #8f5aff, #ed8c18 70.71%);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+.intitule2:hover:before {
+  visibility: visible;
+  width: 100%; }
+
 .barre_G2 {
   width: 150px;
   height: 10px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  padding-bottom: 5px; }
 
 .barre_D2 {
   width: 150px;
   height: 10px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  padding-bottom: 5px; }
 
 /* Desktop 1440 */
 @media all and (max-width: 1440px) {
@@ -302,9 +332,6 @@ main {
 @media all and (max-width: 1339px) {
   .box_barres2 {
     margin-bottom: 20px; }
-
-  .intitule {
-    width: 50%; }
 
   .barre_G2 {
     width: 120px;
@@ -326,9 +353,6 @@ main {
   .entrees2, .plats_principaux2, .desserts2 {
     font-size: 1rem; }
 
-  .intitule {
-    width: 70%; }
-
   .barre_G2 {
     width: 80px;
     height: 6px;
@@ -342,9 +366,6 @@ main {
 @media all and (max-width: 767px) {
   .titre_menu_2 {
     font-size: 1.5rem; }
-
-  .intitule {
-    width: 70%; }
 
   .barre_G2 {
     width: 50px;
@@ -375,8 +396,25 @@ main {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
   background-image: gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text; }
+
+.intitule3 {
+  position: relative; }
+
+.intitule3:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(217deg, #2c99fb, #0229dd 70.71%);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+.intitule3:hover:before {
+  visibility: visible;
+  width: 100%; }
 
 .barre_G3 {
   width: 170px;
@@ -392,9 +430,6 @@ main {
 @media all and (max-width: 1440px) {
   .G_M3 {
     width: 100%; }
-
-  .intitule {
-    width: 60%; }
 
   .barre_G3 {
     width: 140px;
@@ -437,9 +472,6 @@ main {
 @media all and (max-width: 767px) {
   .titre_menu_3 {
     font-size: 1.5rem; }
-
-  .intitule {
-    width: 50%; }
 
   .barre_G3 {
     width: 70px;
@@ -470,8 +502,25 @@ main {
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
   background-image: gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text; }
+
+.intitule4 {
+  position: relative; }
+
+.intitule4:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0.25turn, #beff7f, #3e923a, #beff7f);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+.intitule4:hover:before {
+  visibility: visible;
+  width: 100%; }
 
 .barre_G4 {
   width: 180px;
@@ -487,9 +536,6 @@ main {
 @media all and (max-width: 1440px) {
   .G_M4 {
     width: 100%; }
-
-  .intitule {
-    width: 60%; }
 
   .barre_G4 {
     width: 155px;
@@ -532,9 +578,6 @@ main {
 @media all and (max-width: 767px) {
   .titre_menu_4 {
     font-size: 1.5rem; }
-
-  .intitule {
-    width: 50%; }
 
   .barre_G4 {
     width: 75px;
@@ -581,7 +624,6 @@ main {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
   background-image: gradient(linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text; }
 
 .menus {
@@ -642,14 +684,12 @@ main {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
   background-image: gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text; }
 
 .c_font4 {
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
   background-image: gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text; }
 
 .m_font1 {

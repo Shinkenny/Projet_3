@@ -46,11 +46,37 @@
 	color: #6e4ccc;
 }
 
+.intitule2
+{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.intitule2:before
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    @include underline-color2();
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.intitule2:hover:before
+{
+    visibility: visible;
+    width: 100%;
+}
+
 .barre_G2
 {
     width: 150px;
     height: 10px;
     margin-top: 5px;
+    padding-bottom: 5px;
 }
 
 .barre_D2
@@ -58,6 +84,7 @@
     width: 150px;
     height: 10px;
     margin-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Desktop 1440 */
@@ -89,11 +116,6 @@
     .box_barres2
     {
         margin-bottom: 20px;
-    }
-
-    .intitule
-    {
-        width: 50%;
     }
 
     .barre_G2
@@ -129,11 +151,6 @@
         font-size: 1rem;
     }
 
-    .intitule
-    {
-        width: 70%;
-    }
-
     .barre_G2
     {
         width: 80px;
@@ -155,11 +172,6 @@
     .titre_menu_2
     {
         font-size: nth($font-size, 3);
-    }
-
-    .intitule
-    {
-        width: 70%;
     }
 
     .barre_G2

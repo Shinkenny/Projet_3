@@ -16,6 +16,30 @@
 	@include font-color_m3();
 }
 
+.intitule3
+{
+    position: relative;
+}
+
+.intitule3:before
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    @include underline-color3();
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.intitule3:hover:before
+{
+    visibility: visible;
+    width: 100%;
+}
+
 .barre_G3
 {
     width: 170px;
@@ -36,11 +60,6 @@
 	.G_M3
 	{
 		width: 100%;
-	}
-
-	.intitule
-	{
-		width: 60%;
 	}
 
 	.barre_G3
@@ -110,11 +129,6 @@
 	.titre_menu_3
 	{
 		font-size: nth($font-size, 3);
-	}
-
-	.intitule
-	{
-		width: 50%;
 	}
 
 	.barre_G3
