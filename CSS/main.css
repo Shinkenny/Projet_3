@@ -25,6 +25,49 @@ footer {
   background-color: #579c87;
   z-index: 2; }
 
+.wiggle:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(2deg); }
+  25% {
+    -webkit-transform: rotate(-2deg); }
+  50% {
+    -webkit-transform: rotate(3deg); }
+  75% {
+    -webkit-transform: rotate(-3deg); }
+  100% {
+    -webkit-transform: rotate(0deg); } }
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(1deg); }
+  25% {
+    -ms-transform: rotate(-1deg); }
+  50% {
+    -ms-transform: rotate(1deg); }
+  75% {
+    -ms-transform: rotate(-1deg); }
+  100% {
+    -ms-transform: rotate(0deg); } }
+@keyframes wiggle {
+  0% {
+    transform: rotate(2deg); }
+  25% {
+    transform: rotate(-2deg); }
+  50% {
+    transform: rotate(3deg); }
+  75% {
+    transform: rotate(-3deg); }
+  100% {
+    transform: rotate(0deg); } }
 /* Version Mobile et tablette */
 @media all and (max-width: 767px) {
   footer {
@@ -257,11 +300,11 @@ main {
 .titre_menu_2 {
   font-size: 2rem;
   font-family: 'Amita', cursive;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e38a12), color-stop(0.85, #8f5aff));
-  background-image: gradient(linear, left top, right top, color-stop(0, #e38a12), color-stop(0.85, #8f5aff));
-  color: transparent;
+  background: #ed8c18;
+  background: -webkit-linear-gradient(to left, #8f5aff, #ed8c18);
+  background: linear-gradient(to left, #8f5aff, #ed8c18);
   -webkit-background-clip: text;
-  background-clip: text; }
+  -webkit-text-fill-color: transparent; }
 
 .box_barres2 {
   width: 100%;
@@ -393,10 +436,11 @@ main {
 .titre_menu_3 {
   font-size: 2rem;
   font-family: 'Dancing Script', cursive;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
-  background-image: gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
-  color: transparent;
-  background-clip: text; }
+  background: #0229dd;
+  background: -webkit-linear-gradient(to left, #2c99fb, #2c99fb, #0229dd);
+  background: linear-gradient(to left, #2c99fb, #2c99fb, #0229dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .intitule3 {
   position: relative; }
@@ -499,10 +543,11 @@ main {
 .titre_menu_4 {
   font-size: 2rem;
   font-family: 'Kaushan Script', cursive;
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-  background-image: gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-  color: transparent;
-  background-clip: text; }
+  background: #3e923a;
+  background: -webkit-linear-gradient(to left, #beff7f, #3e923a);
+  background: linear-gradient(to left, #beff7f, #3e923a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .intitule4 {
   position: relative; }
@@ -621,10 +666,11 @@ main {
   text-align: center; }
 
 .fa-color {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
-  background-image: gradient(linear, left top, right top, color-stop(0, #e3515d), color-stop(0.85, #fda07c));
-  color: transparent;
-  background-clip: text; }
+  background: #e3515d;
+  background: -webkit-linear-gradient(to left, #fda07c, #e3515d);
+  background: linear-gradient(to left, #fda07c, #e3515d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .menus {
   text-align: center;
@@ -674,23 +720,25 @@ main {
     transform: scale(1.15); }
 
 .c_font2 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e38a12), color-stop(0.85, #8f5aff));
-  background-image: gradient(linear, left top, right top, color-stop(0, #e38a12), color-stop(0.85, #8f5aff));
-  color: transparent;
+  background: #ed8c18;
+  background: -webkit-linear-gradient(to left, #8f5aff, #ed8c18);
+  background: linear-gradient(to left, #8f5aff, #ed8c18);
   -webkit-background-clip: text;
-  background-clip: text; }
+  -webkit-text-fill-color: transparent; }
 
 .c_font3 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
-  background-image: gradient(linear, left top, right top, color-stop(0, #0229dd), color-stop(0.85, #2c99fb));
-  color: transparent;
-  background-clip: text; }
+  background: #0229dd;
+  background: -webkit-linear-gradient(to left, #2c99fb, #2c99fb, #0229dd);
+  background: linear-gradient(to left, #2c99fb, #2c99fb, #0229dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .c_font4 {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-  background-image: gradient(linear, left top, right bottom, color-stop(0, #3e923a), color-stop(0.85, #beff7f));
-  color: transparent;
-  background-clip: text; }
+  background: #3e923a;
+  background: -webkit-linear-gradient(to left, #beff7f, #3e923a);
+  background: linear-gradient(to left, #beff7f, #3e923a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .m_font1 {
   font-family: 'Kalam', cursive;
