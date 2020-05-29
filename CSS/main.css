@@ -4,13 +4,22 @@
 /* Pour le menu 4 */
 header {
   width: 100%;
+  height: 100px;
   color: #fdcb46;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-weight: bold;
   background-color: #579c87;
-  margin-top: -45px; }
+  margin: auto;
+  padding: 2px; }
 
+/* Version mobile */
+@media all and (max-width: 767px) {
+  header {
+    height: 80px; } }
 footer {
   width: 100%;
   position: fixed;
@@ -113,7 +122,7 @@ main {
 
 .la_note {
   text-align: center;
-  margin-top: -15px; }
+  margin-top: 35px; }
 
 .note_size1 {
   font-size: 4rem;
@@ -295,7 +304,7 @@ main {
 
 .le_chic {
   text-align: center;
-  margin-top: -15px; }
+  margin-top: 35px; }
 
 .titre_menu_2 {
   font-size: 2rem;
@@ -431,7 +440,7 @@ main {
 }*/
 .le_delice {
   text-align: center;
-  margin-top: -15px; }
+  margin-top: 35px; }
 
 .titre_menu_3 {
   font-size: 2rem;
@@ -538,7 +547,7 @@ main {
 }*/
 .la_palette {
   text-align: center;
-  margin-top: -15px; }
+  margin-top: 35px; }
 
 .titre_menu_4 {
   font-size: 2rem;
@@ -678,7 +687,8 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  padding-top: 50px; }
   .menus__menu {
     width: 320px;
     height: 420px;
@@ -768,6 +778,31 @@ main {
     font-size: 1.5rem;
     color: #fdcb46; }
 
+.dots {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both; }
+
+.dots:nth-child(2) {
+  animation-delay: .2s; }
+
+.dots:nth-child(3) {
+  animation-delay: .4s; }
+
+@keyframes blink {
+  0% {
+    opacity: 0.1; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.1; } }
+.mentions {
+  text-align: center; }
+
+.mentions-text {
+  margin-bottom: 100px; }
+
 /* Version tablette */
 @media all and (max-width: 1024px) {
   .menus {
@@ -782,11 +817,17 @@ main {
     width: 240px; } }
 /* Version mobile */
 @media all and (max-width: 767px) {
+  h1 {
+    font-size: 3.0769230769rem; }
+
   .soon {
     margin-bottom: 80px;
     width: 180px;
     height: 35px; }
     .soon__prochainement {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+
+  .menus {
+    padding-top: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
