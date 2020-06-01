@@ -28,7 +28,7 @@
 	{
 		background-color: $color-menu1;
 		font-family: 'Kalam', cursive;
-		color: #3d1319;
+		color: $color-font1;
 	}
 	&__num--2
 	{
@@ -86,7 +86,7 @@
 	height: 3px;
 	bottom: 0;
 	left: 0;
-	background-color: #3d1319;
+	background-color: $color-font1;
 	visibility: hidden;
 	transition: all 0.3s ease-in-out;
 }

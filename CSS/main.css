@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/* Couleurs des header et footer */
+/* Couleurs des fonds pour les menus */
+/* Couleurs des polices pour le mot "menu" */
+/* Couleurs pour la note de musique */
+/* Couleurs pour les gradients */
+/* Couleurs spécifiques au menu2 */
 /* Pour le menu 1 */
 /* Pour le menu 2 */
 /* Pour le menu 3 */
@@ -725,9 +732,11 @@ main {
   flex-direction: column;
   justify-content: center;
   transform: scale(1);
-  transition: transform 400ms; }
+  transition: all 400ms;
+  opacity: 1; }
   .anim_menu:hover {
-    transform: scale(1.15); }
+    transform: scale(1.15);
+    opacity: 0.6; }
 
 .c_font2 {
   background: #ed8c18;

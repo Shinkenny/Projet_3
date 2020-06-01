@@ -1,9 +1,9 @@
 /* Pour le menu 1 */
 @mixin note-color_m1()
 {
-    background: #e3515d;
-    background: -webkit-linear-gradient(to left, #fda07c, #e3515d);
-    background: linear-gradient(to left, #fda07c, #e3515d);
+    background: $color-note1;
+    background: -webkit-linear-gradient(to left, $color-note2, $color-note1);
+    background: linear-gradient(to left, $color-note2, $color-note1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -11,44 +11,44 @@
 /* Pour le menu 2 */
 @mixin font-color_m2h()
 {
-	background: #ed8c18;
-    background: -webkit-linear-gradient(to left, #8f5aff, #ed8c18);
-    background: linear-gradient(to left, #8f5aff, #ed8c18);
+	background: $gradient-m2l;
+    background: -webkit-linear-gradient(to left, $gradient-m2r, $gradient-m2l);
+    background: linear-gradient(to left, $gradient-m2r, $gradient-m2l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @mixin underline-color2()
 {
-    background: linear-gradient(217deg, #8f5aff, #ed8c18 70.71%)
+    background: linear-gradient(217deg, $gradient-m2r, $gradient-m2l 70.71%)
 }
 
 /* Pour le menu 3 */
 @mixin font-color_m3()
 {
-	background: #0229dd;
-    background: -webkit-linear-gradient(to left, #2c99fb, #2c99fb, #0229dd);
-    background: linear-gradient(to left, #2c99fb, #2c99fb, #0229dd);
+	background: $gradient-m3l;
+    background: -webkit-linear-gradient(to left, $gradient-m3r, $gradient-m3r, $gradient-m3l);
+    background: linear-gradient(to left, $gradient-m3r, $gradient-m3r, $gradient-m3l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @mixin underline-color3()
 {
-    background: linear-gradient(217deg, #2c99fb, #0229dd 70.71%)
+    background: linear-gradient(217deg, $gradient-m3r, $gradient-m3l 70.71%)
 }
 
 /* Pour le menu 4 */
 @mixin font-color_m4()
 {
-	background: #3e923a;
-    background: -webkit-linear-gradient(to left, #beff7f, #3e923a);
-    background: linear-gradient(to left, #beff7f, #3e923a);
+	background: $gradient-m4l;
+    background: -webkit-linear-gradient(to left, $gradient-m4r, $gradient-m4l);
+    background: linear-gradient(to left, $gradient-m4r, $gradient-m4l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @mixin underline-color4()
 {
-    background: linear-gradient(0.25turn, #beff7f, #3e923a, #beff7f);
+    background: linear-gradient(0.25turn, $gradient-m4r, $gradient-m4l, $gradient-m4r);
 }

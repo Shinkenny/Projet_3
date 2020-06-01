@@ -102,28 +102,28 @@ main
     border: solid 1px $color-menu1;
 	background-color: $color-menu1;
 	font-family: 'Devonshire', cursive;
-    color: #3d1319;
+    color: $color-font1;
 	}
 	&__menu--2
 	{
 	border: solid 1px $color-menu2;
 	background-color: $color-menu2;
 	font-family: 'Amita', cursive;
-    color: #c77412;
+    color: $color-font2;
 	}
 	&__menu--3
 	{
 	border: solid 1px $color-menu3;
 	background-color: $color-menu3;
     font-family: 'Dancing Script', cursive;
-    color: #0887fb;
+    color: $color-font3;
 	}
 	&__menu--4
 	{
 	border: solid 1px $color-menu4;
 	background-color: $color-menu4;
     font-family: 'Kaushan Script', cursive;
-    color: #7bc361;
+    color: $color-font4;
 	}
 }
 
@@ -135,10 +135,12 @@ main
     flex-direction: column;
     justify-content: center;
 	transform: scale(1);
-    transition: transform 400ms;
+    transition: all 400ms;
+    opacity: 1;
     &:hover
     {
         transform: scale(1.15);
+        opacity: 0.6;
     }
 }
 
