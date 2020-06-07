@@ -97,6 +97,7 @@ main
 	border: solid 1px $color-menu2;
 	background-color: $color-menu2;
 	font-family: 'Amita', cursive;
+	font-size: 1rem;
     color: $color-font2;
 	}
 	&__menu--3
@@ -293,5 +294,9 @@ main
 	.menus
 	{
 		padding-top: 30px;
+		&__menu--2
+		{
+			font-size: 0.8rem;
+		}
 	}
 }

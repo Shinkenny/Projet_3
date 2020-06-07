@@ -67,6 +67,7 @@ main {
     border: solid 1px #fff5fe;
     background-color: #fff5fe;
     font-family: 'Amita', cursive;
+    font-size: 1rem;
     color: #c77412; }
   .menus__menu--3 {
     border: solid 1px #f9f9f9;
@@ -211,7 +212,9 @@ main {
       font-size: 1rem; }
 
   .menus {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+    .menus__menu--2 {
+      font-size: 0.8rem; } }
 header {
   width: 100%;
   height: 100px;
