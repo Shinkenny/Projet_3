@@ -291,10 +291,10 @@ main {
   align-items: center;
   text-align: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 40px; }
   .M_Menu__num {
     margin-bottom: 150px;
-    padding: 40px;
     box-shadow: 0px 0px 10px #c9c9c9; }
   .M_Menu__num--1 {
     background-color: #fcdfdb;
@@ -454,11 +454,14 @@ main {
     margin-top: 5px; }
 
   .noms {
-    font-size: 0.9090909091rem; } }
+    font-size: 0.9090909091rem;
+    padding: 0px 35px; } }
 /* Version tablette */
 @media all and (min-width: 768px) and (max-width: 1023px) {
   .noms {
-    flex-direction: column; }
+    flex-direction: column;
+    font-size: 0.8333333333rem;
+    padding: 0px 30px; }
 
   .plat {
     margin-bottom: 30px;
@@ -482,9 +485,6 @@ main {
 
   .entrees, .plats_principaux, .desserts {
     font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; }
 
   .fin {
     padding-top: 0px;
@@ -612,7 +612,7 @@ main {
 
   .noms {
     font-size: 0.8333333333rem;
-    padding: 0px 15px; }
+    padding: 0px 10px; }
 
   .fin {
     padding-top: 0px;
@@ -621,7 +621,7 @@ main {
 
   .note_size_small {
     font-size: 2rem;
-    padding-top: 15px;
+    padding-top: 5px;
     padding-right: 15px; } }
 .G_M2 {
   font-family: 'Playfair Display', serif;
@@ -639,9 +639,6 @@ main {
   background: linear-gradient(to left, #8f5aff, #ed8c18);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
-
-.noms {
-  padding: 0px 55px; }
 
 .box_barres2 {
   width: 100%;
@@ -749,26 +746,9 @@ main {
   .barre_D2 {
     width: 180px;
     height: 10px;
-    margin-top: 5px; }
-
-  .noms {
-    font-size: 0.9090909091rem; } }
+    margin-top: 5px; } }
 /* Version tablette */
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  .noms {
-    flex-direction: column;
-    font-size: 0.8333333333rem; }
-
-  .plat {
-    margin-bottom: 30px;
-    text-align: center; }
-
-  .prix {
-    margin-bottom: 40px;
-    margin-top: -25px;
-    margin-left: 0px;
-    font-weight: bold; }
-
   .barre_G2 {
     width: 135px;
     height: 9px;
@@ -783,10 +763,6 @@ main {
     font-size: 1rem; } }
 /* Version tablette mid */
 @media all and (min-width: 651px) and (max-width: 767px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_2 {
     font-size: 1.5rem; }
 
@@ -801,10 +777,6 @@ main {
     margin-top: 5px; } }
 /* Version tablette small */
 @media all and (min-width: 551px) and (max-width: 650px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_2 {
     font-size: 1.5rem; }
 
@@ -819,10 +791,6 @@ main {
     margin-top: 5px; } }
 /* Version mobile */
 @media all and (min-width: 425px) and (max-width: 550px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_2 {
     font-size: 1.5rem; }
 
@@ -837,34 +805,24 @@ main {
     margin-top: 5px; }
 
   .entrees2, .plats_principaux2, .desserts2 {
-    font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; } }
+    font-size: 1rem; } }
 /* Version mobile small */
 @media all and (min-width: 320px) and (max-width: 424px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_2 {
     font-size: 1.5rem; }
 
   .barre_G2 {
-    width: 90px;
+    width: 70px;
     height: 6px;
     margin-top: 5px; }
 
   .barre_D2 {
-    width: 90px;
+    width: 70px;
     height: 6px;
     margin-top: 5px; }
 
   .entrees2, .plats_principaux2, .desserts2 {
-    font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; } }
+    font-size: 1rem; } }
 .G_M3 {
   width: 100%; }
 
@@ -939,9 +897,6 @@ main {
     margin-top: 5px; } }
 /* Desktop small */
 @media all and (min-width: 1280px) and (max-width: 1439px) {
-  .box_barres {
-    margin-bottom: 20px; }
-
   .barre_G3 {
     width: 230px;
     height: 45px;
@@ -953,9 +908,6 @@ main {
     margin-top: 5px; } }
 /* Desktop XS */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
-  .box_barres {
-    margin-bottom: 20px; }
-
   .barre_G3 {
     width: 180px;
     height: 40px;
@@ -964,26 +916,9 @@ main {
   .barre_D3 {
     width: 180px;
     height: 40px;
-    margin-top: 5px; }
-
-  .noms {
-    font-size: 0.9090909091rem; } }
+    margin-top: 5px; } }
 /* Version tablette */
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  .noms {
-    flex-direction: column;
-    font-size: 0.8333333333rem; }
-
-  .plat {
-    margin-bottom: 30px;
-    text-align: center; }
-
-  .prix {
-    margin-bottom: 40px;
-    margin-top: -25px;
-    margin-left: 0px;
-    font-weight: bold; }
-
   .barre_G3 {
     width: 135px;
     height: 35px;
@@ -992,16 +927,9 @@ main {
   .barre_D3 {
     width: 135px;
     height: 35px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; } }
+    margin-top: 5px; } }
 /* Version tablette mid */
 @media all and (min-width: 651px) and (max-width: 767px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_3 {
     font-size: 1.5rem; }
 
@@ -1013,16 +941,9 @@ main {
   .barre_D3 {
     width: 180px;
     height: 35px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; } }
+    margin-top: 5px; } }
 /* Version tablette small */
 @media all and (min-width: 551px) and (max-width: 650px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_3 {
     font-size: 1.5rem; }
 
@@ -1034,16 +955,9 @@ main {
   .barre_D3 {
     width: 135px;
     height: 35px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; } }
+    margin-top: 5px; } }
 /* Version mobile */
 @media all and (min-width: 425px) and (max-width: 550px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_3 {
     font-size: 1.5rem; }
 
@@ -1055,37 +969,21 @@ main {
   .barre_D3 {
     width: 115px;
     height: 30px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; } }
+    margin-top: 5px; } }
 /* Version mobile small */
 @media all and (min-width: 320px) and (max-width: 424px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_3 {
     font-size: 1.5rem; }
 
   .barre_G3 {
-    width: 90px;
+    width: 85px;
     height: 30px;
     margin-top: 5px; }
 
   .barre_D3 {
-    width: 90px;
+    width: 85px;
     height: 30px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; } }
+    margin-top: 5px; } }
 .G_M4 {
   width: 100%; }
 
@@ -1160,9 +1058,6 @@ main {
     margin-top: 5px; } }
 /* Desktop small */
 @media all and (min-width: 1280px) and (max-width: 1439px) {
-  .box_barres {
-    margin-bottom: 20px; }
-
   .barre_G4 {
     width: 230px;
     height: 50px;
@@ -1174,9 +1069,6 @@ main {
     margin-top: 5px; } }
 /* Desktop XS */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
-  .box_barres {
-    margin-bottom: 20px; }
-
   .barre_G4 {
     width: 180px;
     height: 45px;
@@ -1185,26 +1077,9 @@ main {
   .barre_D4 {
     width: 180px;
     height: 45px;
-    margin-top: 5px; }
-
-  .noms {
-    font-size: 0.9090909091rem; } }
+    margin-top: 5px; } }
 /* Version tablette */
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  .noms {
-    flex-direction: column;
-    font-size: 0.8333333333rem; }
-
-  .plat {
-    margin-bottom: 30px;
-    text-align: center; }
-
-  .prix {
-    margin-bottom: 40px;
-    margin-top: -25px;
-    margin-left: 0px;
-    font-weight: bold; }
-
   .barre_G4 {
     width: 140px;
     height: 35px;
@@ -1213,16 +1088,9 @@ main {
   .barre_D4 {
     width: 140px;
     height: 35px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; } }
+    margin-top: 5px; } }
 /* Version tablette mid */
 @media all and (min-width: 651px) and (max-width: 767px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_4 {
     font-size: 1.5rem; }
 
@@ -1234,16 +1102,9 @@ main {
   .barre_D4 {
     width: 180px;
     height: 35px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; } }
+    margin-top: 5px; } }
 /* Version tablette small */
 @media all and (min-width: 551px) and (max-width: 650px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_4 {
     font-size: 1.5rem; }
 
@@ -1255,16 +1116,9 @@ main {
   .barre_D4 {
     width: 135px;
     height: 35px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; } }
+    margin-top: 5px; } }
 /* Version mobile */
 @media all and (min-width: 425px) and (max-width: 550px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_4 {
     font-size: 1.5rem; }
 
@@ -1276,36 +1130,20 @@ main {
   .barre_D4 {
     width: 115px;
     height: 30px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; } }
+    margin-top: 5px; } }
 /* Version mobile small */
 @media all and (min-width: 320px) and (max-width: 424px) {
-  .M_Menu {
-    width: 80%;
-    padding: 5px; }
-
   .titre_menu_4 {
     font-size: 1.5rem; }
 
   .barre_G4 {
-    width: 95px;
+    width: 90px;
     height: 30px;
     margin-top: 5px; }
 
   .barre_D4 {
-    width: 95px;
+    width: 90px;
     height: 30px;
-    margin-top: 5px; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; }
-
-  .noms {
-    font-size: 0.8333333333rem; } }
+    margin-top: 5px; } }
 
 /*# sourceMappingURL=main.css.map */

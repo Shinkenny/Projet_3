@@ -17,11 +17,6 @@
 	@include font-color_m2h();
 }
 
-.noms
-{
-    padding: 0px 55px;
-}
-
 .box_barres2
 {
     width: 100%;
@@ -183,36 +178,11 @@
         height: 10px;
         margin-top: 5px;
     }
-
-    .noms
-    {
-        font-size: $f-size_noms-plats/1.1;
-    }
 }
 
 /* Version tablette */
 @media all and (min-width: 768px) and (max-width: 1023px)
 {
-    .noms
-    {
-        flex-direction: column;
-        font-size: $f-size_noms-plats/1.2;
-    }
-
-    .plat
-    {
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .prix
-    {
-        margin-bottom: 40px;
-        margin-top: -25px;
-        margin-left: 0px;
-        font-weight: bold;
-    }
-
     .barre_G2
     {
         width: 135px;
@@ -236,12 +206,6 @@
 /* Version tablette mid */
 @media all and (min-width: 651px) and (max-width: 767px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_2
     {
         font-size: nth($font-size, 3);
@@ -265,12 +229,6 @@
 /* Version tablette small */
 @media all and (min-width: 551px) and (max-width: 650px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_2
     {
         font-size: nth($font-size, 3);
@@ -294,12 +252,6 @@
 /* Version mobile */
 @media all and (min-width: 425px) and (max-width: 550px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_2
     {
         font-size: nth($font-size, 3);
@@ -322,23 +274,12 @@
     .entrees2, .plats_principaux2, .desserts2
     {
         font-size: nth($font-size, 4);
-    }
-
-    .noms
-    {
-        font-size: $f-size_noms-plats/1.2;
     }
 }
 
 /* Version mobile small */
 @media all and (min-width: 320px) and (max-width: 424px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_2
     {
         font-size: nth($font-size, 3);
@@ -346,14 +287,14 @@
 
     .barre_G2
     {
-        width: 90px;
+        width: 70px;
         height: 6px;
         margin-top: 5px;
     }
 
     .barre_D2
     {
-        width: 90px;
+        width: 70px;
         height: 6px;
         margin-top: 5px;
     }
@@ -361,10 +302,5 @@
     .entrees2, .plats_principaux2, .desserts2
     {
         font-size: nth($font-size, 4);
-    }
-
-    .noms
-    {
-        font-size: $f-size_noms-plats/1.2;
     }
 }

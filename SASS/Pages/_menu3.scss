@@ -103,11 +103,6 @@
 /* Desktop small */
 @media all and (min-width: 1280px) and (max-width: 1439px)
 {
-    .box_barres
-    {
-        margin-bottom: 20px;
-    }
-
     .barre_G3
     {
         width: 230px;
@@ -126,11 +121,6 @@
 /* Desktop XS */
 @media all and (min-width: 1024px) and (max-width: 1279px)
 {
-    .box_barres
-    {
-        margin-bottom: 20px;
-    }
-
     .barre_G3
     {
         width: 180px;
@@ -143,37 +133,12 @@
         width: 180px;
         height: 40px;
         margin-top: 5px;
-    }
-
-    .noms
-    {
-        font-size: $f-size_noms-plats/1.1;
     }
 }
 
 /* Version tablette */
 @media all and (min-width: 768px) and (max-width: 1023px)
 {
-    .noms
-    {
-        flex-direction: column;
-        font-size: $f-size_noms-plats/1.2;
-    }
-
-    .plat
-    {
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .prix
-    {
-        margin-bottom: 40px;
-        margin-top: -25px;
-        margin-left: 0px;
-        font-weight: bold;
-    }
-
     .barre_G3
     {
         width: 135px;
@@ -186,23 +151,12 @@
         width: 135px;
         height: 35px;
         margin-top: 5px;
-    }
-
-    .entrees, .plats_principaux, .desserts
-    {
-        font-size: nth($font-size, 4);
     }
 }
 
 /* Version tablette mid */
 @media all and (min-width: 651px) and (max-width: 767px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_3
     {
         font-size: nth($font-size, 3);
@@ -220,23 +174,12 @@
         width: 180px;
         height: 35px;
         margin-top: 5px;
-    }
-
-    .entrees, .plats_principaux, .desserts
-    {
-        font-size: nth($font-size, 4);
     }
 }
 
 /* Version tablette small */
 @media all and (min-width: 551px) and (max-width: 650px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_3
     {
         font-size: nth($font-size, 3);
@@ -254,23 +197,12 @@
         width: 135px;
         height: 35px;
         margin-top: 5px;
-    }
-
-    .entrees, .plats_principaux, .desserts
-    {
-        font-size: nth($font-size, 4);
     }
 }
 
 /* Version mobile */
 @media all and (min-width: 425px) and (max-width: 550px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_3
     {
         font-size: nth($font-size, 3);
@@ -288,28 +220,12 @@
         width: 115px;
         height: 30px;
         margin-top: 5px;
-    }
-
-    .entrees, .plats_principaux, .desserts
-    {
-        font-size: nth($font-size, 4);
-    }
-
-    .noms
-    {
-        font-size: $f-size_noms-plats/1.2;
     }
 }
 
 /* Version mobile small */
 @media all and (min-width: 320px) and (max-width: 424px)
 {
-    .M_Menu
-    {
-        width: 80%;
-        padding: 5px;
-    }
-
     .titre_menu_3
     {
         font-size: nth($font-size, 3);
@@ -317,25 +233,15 @@
 
     .barre_G3
     {
-        width: 90px;
+        width: 85px;
         height: 30px;
         margin-top: 5px;
     }
 
     .barre_D3
     {
-        width: 90px;
+        width: 85px;
         height: 30px;
         margin-top: 5px;
-    }
-
-    .entrees, .plats_principaux, .desserts
-    {
-        font-size: nth($font-size, 4);
-    }
-
-    .noms
-    {
-        font-size: $f-size_noms-plats/1.2;
     }
 }
