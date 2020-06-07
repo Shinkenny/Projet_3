@@ -1,6 +1,7 @@
 .G_M2
 {
 	font-family: 'Playfair Display', serif;
+    width: 100%;
 }
 
 .le_chic
@@ -73,22 +74,22 @@
 
 .barre_G2
 {
-    width: 150px;
-    height: 10px;
+    width: 360px;
+    height: 11px;
     margin-top: 5px;
     padding-bottom: 5px;
 }
 
 .barre_D2
 {
-    width: 150px;
-    height: 10px;
+    width: 360px;
+    height: 11px;
     margin-top: 5px;
     padding-bottom: 5px;
 }
 
-/* Desktop 1440 */
-@media all and (max-width: 1440px)
+/* Desktop */
+@media all and (min-width: 1600px) and (max-width: 1900px)
 {
     .G_M2
     {
@@ -97,21 +98,44 @@
 
     .barre_G2
     {
-        width: 140px;
+        width: 340px;
+        height: 11px;
+        margin-top: 5px;
+    }
+
+    .barre_D2
+    {
+        width: 340px;
+        height: 11px;
+        margin-top: 5px;
+    }
+}
+
+/* Desktop mid */
+@media all and (min-width: 1440px) and (max-width: 1599px)
+{
+    .G_M2
+    {
+        width: 100%;
+    }
+
+    .barre_G2
+    {
+        width: 240px;
         height: 10px;
         margin-top: 5px;
     }
 
     .barre_D2
     {
-        width: 140px;
+        width: 240px;
         height: 10px;
         margin-top: 5px;
     }
 }
 
-/* Desktop 1024 */
-@media all and (max-width: 1339px)
+/* Desktop small */
+@media all and (min-width: 1280px) and (max-width: 1439px)
 {
     .box_barres2
     {
@@ -120,21 +144,82 @@
 
     .barre_G2
     {
-        width: 120px;
+        width: 230px;
         height: 10px;
         margin-top: 5px;
     }
 
     .barre_D2
     {
-        width: 120px;
+        width: 230px;
+        height: 10px;
+        margin-top: 5px;
+    }
+}
+
+/* Desktop XS */
+@media all and (min-width: 1024px) and (max-width: 1279px)
+{
+    .box_barres2
+    {
+        margin-bottom: 20px;
+    }
+
+    .barre_G2
+    {
+        width: 180px;
         height: 10px;
         margin-top: 5px;
     }
 
-    .titre_menu_2
+    .barre_D2
     {
-        font-size: nth($font-size, 3);
+        width: 180px;
+        height: 10px;
+        margin-top: 5px;
+    }
+
+    .noms
+    {
+        font-size: $f-size_noms-plats/1.1;
+    }
+}
+
+/* Version tablette */
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    .noms
+    {
+        flex-direction: column;
+        font-size: $f-size_noms-plats/1.2;
+    }
+
+    .plat
+    {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .prix
+    {
+        margin-bottom: 40px;
+        margin-top: -25px;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+
+    .barre_G2
+    {
+        width: 135px;
+        height: 9px;
+        margin-top: 5px;
+    }
+
+    .barre_D2
+    {
+        width: 135px;
+        height: 9px;
+        margin-top: 5px;
     }
 
     .entrees2, .plats_principaux2, .desserts2
@@ -143,32 +228,15 @@
     }
 }
 
-/* Version tablette */
-@media all and (max-width: 768px)
+/* Version tablette mid */
+@media all and (min-width: 651px) and (max-width: 767px)
 {
-    .entrees2, .plats_principaux2, .desserts2
+    .M_Menu
     {
-        font-size: 1rem;
+        width: 80%;
+        padding: 5px;
     }
 
-    .barre_G2
-    {
-        width: 80px;
-        height: 6px;
-        margin-top: 5px;
-    }
-
-    .barre_D2
-    {
-        width: 80px;
-        height: 6px;
-        margin-top: 5px;
-    }
-}
-
-/* Version mobile */
-@media all and (max-width: 767px)
-{
     .titre_menu_2
     {
         font-size: nth($font-size, 3);
@@ -176,15 +244,112 @@
 
     .barre_G2
     {
-        width: 50px;
-        height: 5px;
+        width: 150px;
+        height: 8px;
         margin-top: 5px;
     }
 
     .barre_D2
     {
-        width: 50px;
-        height: 5px;
+        width: 150px;
+        height: 8px;
+        margin-top: 5px;
+    }
+}
+
+/* Version tablette small */
+@media all and (min-width: 551px) and (max-width: 650px)
+{
+    .M_Menu
+    {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .titre_menu_2
+    {
+        font-size: nth($font-size, 3);
+    }
+
+    .barre_G2
+    {
+        width: 130px;
+        height: 8px;
+        margin-top: 5px;
+    }
+
+    .barre_D2
+    {
+        width: 130px;
+        height: 8px;
+        margin-top: 5px;
+    }
+}
+
+/* Version mobile */
+@media all and (min-width: 425px) and (max-width: 550px)
+{
+    .M_Menu
+    {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .titre_menu_2
+    {
+        font-size: nth($font-size, 3);
+    }
+
+    .barre_G2
+    {
+        width: 110px;
+        height: 7px;
+        margin-top: 5px;
+    }
+
+    .barre_D2
+    {
+        width: 110px;
+        height: 7px;
+        margin-top: 5px;
+    }
+
+    .entrees2, .plats_principaux2, .desserts2
+    {
+        font-size: nth($font-size, 4);
+    }
+
+    .noms
+    {
+        font-size: $f-size_noms-plats/1.2;
+    }
+}
+
+/* Version mobile small */
+@media all and (min-width: 320px) and (max-width: 424px)
+{
+    .M_Menu
+    {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .titre_menu_2
+    {
+        font-size: nth($font-size, 3);
+    }
+
+    .barre_G2
+    {
+        width: 90px;
+        height: 6px;
+        margin-top: 5px;
+    }
+
+    .barre_D2
+    {
+        width: 90px;
+        height: 6px;
         margin-top: 5px;
     }
 

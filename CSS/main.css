@@ -133,7 +133,7 @@ main {
   margin-top: 10px;
   margin-bottom: 100px;
   background-color: #579c87;
-  border-radius: 15px 10px;
+  border-radius: 15px 15px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -203,8 +203,7 @@ header {
   text-align: center;
   font-weight: bold;
   background-color: #579c87;
-  margin: auto;
-  padding: 2px; }
+  margin: auto; }
 
 /* Version mobile */
 @media all and (max-width: 767px) {
@@ -279,7 +278,7 @@ main {
   margin: auto; }
 
 .main1 {
-  width: 60%; }
+  width: 100%; }
 
 .G_M1 {
   width: 100%; }
@@ -348,12 +347,12 @@ main {
   width: 100%; }
 
 .barre_G1 {
-  width: 200px;
+  width: 360px;
   height: 50px;
   margin-top: 5px; }
 
 .barre_D1 {
-  width: 200px;
+  width: 360px;
   height: 50px;
   margin-top: 5px; }
 
@@ -388,41 +387,76 @@ main {
   padding-top: 25px;
   padding-right: 15px; }
 
-/* Desktop 1440 */
-@media all and (max-width: 1440px) {
+/* Desktop */
+@media all and (min-width: 1600px) and (max-width: 1900px) {
   .main1 {
-    width: 70%; }
+    width: 100%; }
 
   .G_M1 {
-    width: 100%; } }
-/* Desktop 1024 */
-@media all and (max-width: 1339px) {
+    width: 100%; }
+
+  .barre_G1 {
+    width: 340px;
+    height: 40px;
+    margin-top: 5px; }
+
+  .barre_D1 {
+    width: 340px;
+    height: 40px;
+    margin-top: 5px; } }
+/* Desktop mid */
+@media all and (min-width: 1440px) and (max-width: 1599px) {
   .main1 {
-    width: 90%; }
+    width: 100%; }
+
+  .G_M1 {
+    width: 100%; }
+
+  .barre_G1 {
+    width: 260px;
+    height: 40px;
+    margin-top: 5px; }
+
+  .barre_D1 {
+    width: 260px;
+    height: 40px;
+    margin-top: 5px; } }
+/* Desktop small */
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .main1 {
+    width: 100%; }
 
   .box_barres {
     margin-bottom: 20px; }
 
   .barre_G1 {
-    width: 170px;
+    width: 250px;
     height: 40px;
     margin-top: 5px; }
 
   .barre_D1 {
-    width: 170px;
+    width: 250px;
+    height: 40px;
+    margin-top: 5px; } }
+/* Desktop XS */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .box_barres {
+    margin-bottom: 20px; }
+
+  .barre_G1 {
+    width: 200px;
     height: 40px;
     margin-top: 5px; }
 
-  .titre_menu_1 {
-    font-size: 1.5rem; }
-
-  .entrees, .plats_principaux, .desserts {
-    font-size: 1rem; }
+  .barre_D1 {
+    width: 200px;
+    height: 40px;
+    margin-top: 5px; }
 
   .noms {
     font-size: 0.9090909091rem; } }
 /* Version tablette */
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .noms {
     flex-direction: column; }
 
@@ -436,26 +470,86 @@ main {
     margin-left: 0px;
     font-weight: bold; }
 
-  .main1 {
-    width: 90%; }
-
   .barre_G1 {
-    width: 110px;
+    width: 155px;
     height: 25px;
     margin-top: 5px; }
 
   .barre_D1 {
-    width: 110px;
+    width: 155px;
     height: 25px;
-    margin-top: 5px; } }
-/* Version mobile */
-@media all and (max-width: 767px) {
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; }
+
+  .noms {
+    font-size: 0.8333333333rem; }
+
+  .fin {
+    padding-top: 0px;
+    margin-top: -20px;
+    font-size: 1rem; }
+
+  .note_size_small {
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-right: 15px; } }
+/* Version tablette mid */
+@media all and (min-width: 651px) and (max-width: 767px) {
   .M_Menu {
     width: 80%;
     padding: 5px; }
 
-  .main1 {
-    width: 100%; }
+  .note_size1 {
+    font-size: 2.8571428571rem;
+    margin-bottom: -35px; }
+
+  .titre_menu_1 {
+    font-size: 1.5rem; }
+
+  .barre_G1 {
+    width: 220px;
+    height: 20px;
+    margin-top: 5px; }
+
+  .barre_D1 {
+    width: 220px;
+    height: 20px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version tablette small */
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .note_size1 {
+    font-size: 2.8571428571rem;
+    margin-bottom: -35px; }
+
+  .titre_menu_1 {
+    font-size: 1.5rem; }
+
+  .barre_G1 {
+    width: 180px;
+    height: 20px;
+    margin-top: 5px; }
+
+  .barre_D1 {
+    width: 180px;
+    height: 20px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version mobile */
+@media all and (min-width: 425px) and (max-width: 550px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
 
   .note_size1 {
     font-size: 2.6666666667rem;
@@ -465,12 +559,50 @@ main {
     font-size: 1.5rem; }
 
   .barre_G1 {
-    width: 65px;
+    width: 120px;
     height: 20px;
     margin-top: 5px; }
 
   .barre_D1 {
-    width: 65px;
+    width: 120px;
+    height: 20px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; }
+
+  .noms {
+    font-size: 0.8333333333rem; }
+
+  .fin {
+    padding-top: 0px;
+    margin-top: -20px;
+    font-size: 1rem; }
+
+  .note_size_small {
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-right: 15px; } }
+/* Version mobile small */
+@media all and (min-width: 320px) and (max-width: 424px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .note_size1 {
+    font-size: 2.6666666667rem;
+    margin-bottom: -35px; }
+
+  .titre_menu_1 {
+    font-size: 1.5rem; }
+
+  .barre_G1 {
+    width: 80px;
+    height: 20px;
+    margin-top: 5px; }
+
+  .barre_D1 {
+    width: 80px;
     height: 20px;
     margin-top: 5px; }
 
@@ -490,7 +622,8 @@ main {
     padding-top: 15px;
     padding-right: 15px; } }
 .G_M2 {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  width: 100%; }
 
 .le_chic {
   text-align: center;
@@ -545,78 +678,157 @@ main {
   width: 100%; }
 
 .barre_G2 {
-  width: 150px;
-  height: 10px;
+  width: 360px;
+  height: 11px;
   margin-top: 5px;
   padding-bottom: 5px; }
 
 .barre_D2 {
-  width: 150px;
-  height: 10px;
+  width: 360px;
+  height: 11px;
   margin-top: 5px;
   padding-bottom: 5px; }
 
-/* Desktop 1440 */
-@media all and (max-width: 1440px) {
+/* Desktop */
+@media all and (min-width: 1600px) and (max-width: 1900px) {
   .G_M2 {
     width: 100%; }
 
   .barre_G2 {
-    width: 140px;
+    width: 340px;
+    height: 11px;
+    margin-top: 5px; }
+
+  .barre_D2 {
+    width: 340px;
+    height: 11px;
+    margin-top: 5px; } }
+/* Desktop mid */
+@media all and (min-width: 1440px) and (max-width: 1599px) {
+  .G_M2 {
+    width: 100%; }
+
+  .barre_G2 {
+    width: 240px;
     height: 10px;
     margin-top: 5px; }
 
   .barre_D2 {
-    width: 140px;
+    width: 240px;
     height: 10px;
     margin-top: 5px; } }
-/* Desktop 1024 */
-@media all and (max-width: 1339px) {
+/* Desktop small */
+@media all and (min-width: 1280px) and (max-width: 1439px) {
   .box_barres2 {
     margin-bottom: 20px; }
 
   .barre_G2 {
-    width: 120px;
+    width: 230px;
     height: 10px;
     margin-top: 5px; }
 
   .barre_D2 {
-    width: 120px;
+    width: 230px;
+    height: 10px;
+    margin-top: 5px; } }
+/* Desktop XS */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .box_barres2 {
+    margin-bottom: 20px; }
+
+  .barre_G2 {
+    width: 180px;
     height: 10px;
     margin-top: 5px; }
 
-  .titre_menu_2 {
-    font-size: 1.5rem; }
+  .barre_D2 {
+    width: 180px;
+    height: 10px;
+    margin-top: 5px; }
+
+  .noms {
+    font-size: 0.9090909091rem; } }
+/* Version tablette */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .noms {
+    flex-direction: column;
+    font-size: 0.8333333333rem; }
+
+  .plat {
+    margin-bottom: 30px;
+    text-align: center; }
+
+  .prix {
+    margin-bottom: 40px;
+    margin-top: -25px;
+    margin-left: 0px;
+    font-weight: bold; }
+
+  .barre_G2 {
+    width: 135px;
+    height: 9px;
+    margin-top: 5px; }
+
+  .barre_D2 {
+    width: 135px;
+    height: 9px;
+    margin-top: 5px; }
 
   .entrees2, .plats_principaux2, .desserts2 {
     font-size: 1rem; } }
-/* Version tablette */
-@media all and (max-width: 768px) {
-  .entrees2, .plats_principaux2, .desserts2 {
-    font-size: 1rem; }
+/* Version tablette mid */
+@media all and (min-width: 651px) and (max-width: 767px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
 
-  .barre_G2 {
-    width: 80px;
-    height: 6px;
-    margin-top: 5px; }
-
-  .barre_D2 {
-    width: 80px;
-    height: 6px;
-    margin-top: 5px; } }
-/* Version mobile */
-@media all and (max-width: 767px) {
   .titre_menu_2 {
     font-size: 1.5rem; }
 
   .barre_G2 {
-    width: 50px;
-    height: 5px;
+    width: 150px;
+    height: 8px;
     margin-top: 5px; }
 
   .barre_D2 {
-    width: 50px;
-    height: 5px;
+    width: 150px;
+    height: 8px;
+    margin-top: 5px; } }
+/* Version tablette small */
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_2 {
+    font-size: 1.5rem; }
+
+  .barre_G2 {
+    width: 130px;
+    height: 8px;
+    margin-top: 5px; }
+
+  .barre_D2 {
+    width: 130px;
+    height: 8px;
+    margin-top: 5px; } }
+/* Version mobile */
+@media all and (min-width: 425px) and (max-width: 550px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_2 {
+    font-size: 1.5rem; }
+
+  .barre_G2 {
+    width: 110px;
+    height: 7px;
+    margin-top: 5px; }
+
+  .barre_D2 {
+    width: 110px;
+    height: 7px;
     margin-top: 5px; }
 
   .entrees2, .plats_principaux2, .desserts2 {
@@ -624,10 +836,33 @@ main {
 
   .noms {
     font-size: 0.8333333333rem; } }
-/*.G_M3
-{
-	@include font-color_m3v();	
-}*/
+/* Version mobile small */
+@media all and (min-width: 320px) and (max-width: 424px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_2 {
+    font-size: 1.5rem; }
+
+  .barre_G2 {
+    width: 90px;
+    height: 6px;
+    margin-top: 5px; }
+
+  .barre_D2 {
+    width: 90px;
+    height: 6px;
+    margin-top: 5px; }
+
+  .entrees2, .plats_principaux2, .desserts2 {
+    font-size: 1rem; }
+
+  .noms {
+    font-size: 0.8333333333rem; } }
+.G_M3 {
+  width: 100%; }
+
 .le_delice {
   text-align: center;
   margin-top: 35px; }
@@ -660,70 +895,161 @@ main {
   width: 100%; }
 
 .barre_G3 {
-  width: 170px;
+  width: 360px;
   height: 50px;
   margin-top: 5px; }
 
 .barre_D3 {
-  width: 170px;
+  width: 360px;
   height: 50px;
   margin-top: 5px; }
 
-/* Desktop 1440 */
-@media all and (max-width: 1440px) {
+/* Desktop */
+@media all and (min-width: 1600px) and (max-width: 1900px) {
   .G_M3 {
     width: 100%; }
 
   .barre_G3 {
-    width: 140px;
-    height: 40px;
+    width: 340px;
+    height: 50px;
     margin-top: 5px; }
 
   .barre_D3 {
-    width: 140px;
-    height: 40px;
+    width: 340px;
+    height: 50px;
     margin-top: 5px; } }
-/* Desktop 1024 */
-@media all and (max-width: 1339px) {
+/* Desktop mid */
+@media all and (min-width: 1440px) and (max-width: 1599px) {
+  .G_M3 {
+    width: 100%; }
+
+  .barre_G3 {
+    width: 240px;
+    height: 50px;
+    margin-top: 5px; }
+
+  .barre_D3 {
+    width: 240px;
+    height: 50px;
+    margin-top: 5px; } }
+/* Desktop small */
+@media all and (min-width: 1280px) and (max-width: 1439px) {
   .box_barres {
     margin-bottom: 20px; }
 
   .barre_G3 {
-    width: 145px;
-    height: 35px;
+    width: 230px;
+    height: 45px;
     margin-top: 5px; }
 
   .barre_D3 {
-    width: 145px;
-    height: 35px;
-    margin-top: 5px; }
-
-  .titre_menu_3 {
-    font-size: 1.5rem; } }
-/* Version tablette */
-@media all and (max-width: 768px) {
-  .barre_G3 {
-    width: 100px;
-    height: 25px;
-    margin-top: 5px; }
-
-  .barre_D3 {
-    width: 100px;
-    height: 25px;
+    width: 230px;
+    height: 45px;
     margin-top: 5px; } }
-/* Version mobile */
-@media all and (max-width: 767px) {
+/* Desktop XS */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .box_barres {
+    margin-bottom: 20px; }
+
+  .barre_G3 {
+    width: 180px;
+    height: 40px;
+    margin-top: 5px; }
+
+  .barre_D3 {
+    width: 180px;
+    height: 40px;
+    margin-top: 5px; }
+
+  .noms {
+    font-size: 0.9090909091rem; } }
+/* Version tablette */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .noms {
+    flex-direction: column;
+    font-size: 0.8333333333rem; }
+
+  .plat {
+    margin-bottom: 30px;
+    text-align: center; }
+
+  .prix {
+    margin-bottom: 40px;
+    margin-top: -25px;
+    margin-left: 0px;
+    font-weight: bold; }
+
+  .barre_G3 {
+    width: 135px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .barre_D3 {
+    width: 135px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version tablette mid */
+@media all and (min-width: 651px) and (max-width: 767px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
   .titre_menu_3 {
     font-size: 1.5rem; }
 
   .barre_G3 {
-    width: 70px;
-    height: 20px;
+    width: 180px;
+    height: 35px;
     margin-top: 5px; }
 
   .barre_D3 {
-    width: 70px;
-    height: 20px;
+    width: 180px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version tablette small */
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_3 {
+    font-size: 1.5rem; }
+
+  .barre_G3 {
+    width: 135px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .barre_D3 {
+    width: 135px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version mobile */
+@media all and (min-width: 425px) and (max-width: 550px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_3 {
+    font-size: 1.5rem; }
+
+  .barre_G3 {
+    width: 115px;
+    height: 30px;
+    margin-top: 5px; }
+
+  .barre_D3 {
+    width: 115px;
+    height: 30px;
     margin-top: 5px; }
 
   .entrees, .plats_principaux, .desserts {
@@ -731,10 +1057,33 @@ main {
 
   .noms {
     font-size: 0.8333333333rem; } }
-/*.G_M4
-{
-	@include font-color_m4v();
-}*/
+/* Version mobile small */
+@media all and (min-width: 320px) and (max-width: 424px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_3 {
+    font-size: 1.5rem; }
+
+  .barre_G3 {
+    width: 90px;
+    height: 30px;
+    margin-top: 5px; }
+
+  .barre_D3 {
+    width: 90px;
+    height: 30px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; }
+
+  .noms {
+    font-size: 0.8333333333rem; } }
+.G_M4 {
+  width: 100%; }
+
 .la_palette {
   text-align: center;
   margin-top: 35px; }
@@ -767,70 +1116,185 @@ main {
   width: 100%; }
 
 .barre_G4 {
-  width: 180px;
+  width: 365px;
   height: 50px;
   margin-top: 5px; }
 
 .barre_D4 {
-  width: 180px;
+  width: 365px;
   height: 50px;
   margin-top: 5px; }
 
-/* Desktop 1440 */
-@media all and (max-width: 1440px) {
+/* Desktop */
+@media all and (min-width: 1600px) and (max-width: 1900px) {
   .G_M4 {
     width: 100%; }
 
   .barre_G4 {
-    width: 155px;
-    height: 40px;
+    width: 340px;
+    height: 50px;
     margin-top: 5px; }
 
   .barre_D4 {
-    width: 155px;
-    height: 40px;
+    width: 340px;
+    height: 50px;
     margin-top: 5px; } }
-/* Desktop 1024 */
-@media all and (max-width: 1339px) {
+/* Desktop mid */
+@media all and (min-width: 1440px) and (max-width: 1599px) {
+  .G_M4 {
+    width: 100%; }
+
+  .barre_G4 {
+    width: 240px;
+    height: 50px;
+    margin-top: 5px; }
+
+  .barre_D4 {
+    width: 240px;
+    height: 50px;
+    margin-top: 5px; } }
+/* Desktop small */
+@media all and (min-width: 1280px) and (max-width: 1439px) {
   .box_barres {
     margin-bottom: 20px; }
 
   .barre_G4 {
-    width: 160px;
-    height: 35px;
+    width: 230px;
+    height: 50px;
     margin-top: 5px; }
 
   .barre_D4 {
-    width: 160px;
-    height: 35px;
-    margin-top: 5px; }
-
-  .titre_menu_4 {
-    font-size: 1.5rem; } }
-/* Version tablette */
-@media all and (max-width: 768px) {
-  .barre_G4 {
-    width: 105px;
-    height: 25px;
-    margin-top: 5px; }
-
-  .barre_D4 {
-    width: 105px;
-    height: 25px;
+    width: 230px;
+    height: 50px;
     margin-top: 5px; } }
-/* Version mobile */
-@media all and (max-width: 767px) {
+/* Desktop XS */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .box_barres {
+    margin-bottom: 20px; }
+
+  .barre_G4 {
+    width: 180px;
+    height: 45px;
+    margin-top: 5px; }
+
+  .barre_D4 {
+    width: 180px;
+    height: 45px;
+    margin-top: 5px; }
+
+  .noms {
+    font-size: 0.9090909091rem; } }
+/* Version tablette */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .noms {
+    flex-direction: column;
+    font-size: 0.8333333333rem; }
+
+  .plat {
+    margin-bottom: 30px;
+    text-align: center; }
+
+  .prix {
+    margin-bottom: 40px;
+    margin-top: -25px;
+    margin-left: 0px;
+    font-weight: bold; }
+
+  .barre_G4 {
+    width: 140px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .barre_D4 {
+    width: 140px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version tablette mid */
+@media all and (min-width: 651px) and (max-width: 767px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
   .titre_menu_4 {
     font-size: 1.5rem; }
 
   .barre_G4 {
-    width: 75px;
-    height: 20px;
+    width: 180px;
+    height: 35px;
     margin-top: 5px; }
 
   .barre_D4 {
-    width: 75px;
-    height: 20px;
+    width: 180px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version tablette small */
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_4 {
+    font-size: 1.5rem; }
+
+  .barre_G4 {
+    width: 135px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .barre_D4 {
+    width: 135px;
+    height: 35px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; } }
+/* Version mobile */
+@media all and (min-width: 425px) and (max-width: 550px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_4 {
+    font-size: 1.5rem; }
+
+  .barre_G4 {
+    width: 115px;
+    height: 30px;
+    margin-top: 5px; }
+
+  .barre_D4 {
+    width: 115px;
+    height: 30px;
+    margin-top: 5px; }
+
+  .entrees, .plats_principaux, .desserts {
+    font-size: 1rem; }
+
+  .noms {
+    font-size: 0.8333333333rem; } }
+/* Version mobile small */
+@media all and (min-width: 320px) and (max-width: 424px) {
+  .M_Menu {
+    width: 80%;
+    padding: 5px; }
+
+  .titre_menu_4 {
+    font-size: 1.5rem; }
+
+  .barre_G4 {
+    width: 95px;
+    height: 30px;
+    margin-top: 5px; }
+
+  .barre_D4 {
+    width: 95px;
+    height: 30px;
     margin-top: 5px; }
 
   .entrees, .plats_principaux, .desserts {

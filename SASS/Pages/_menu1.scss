@@ -1,6 +1,6 @@
 .main1
 {
-	width: 60%;
+	width: 100%;
 }
 
 .G_M1
@@ -99,14 +99,14 @@
 
 .barre_G1
 {
-	width: 200px;
+	width: 360px;
 	height: 50px;
 	margin-top: 5px;
 }
 
 .barre_D1
 {
-	width: 200px;
+	width: 360px;
 	height: 50px;
 	margin-top: 5px;
 }
@@ -154,26 +154,68 @@
 	padding-right: 15px;
 }
 
-/* Desktop 1440 */
-@media all and (max-width: 1440px)
+/* Desktop */
+@media all and (min-width: 1600px) and (max-width: 1900px)
 {
 	.main1
 	{
-		width: 70%;
+		width: 100%;
 	}
 
 	.G_M1
 	{
 		width: 100%;
 	}
+
+	.barre_G1
+	{
+		width: 340px;
+		height: 40px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 340px;
+		height: 40px;
+		margin-top: 5px;
+	}
 }
 
-/* Desktop 1024 */
-@media all and (max-width: 1339px)
+/* Desktop mid */
+@media all and (min-width: 1440px) and (max-width: 1599px)
 {
 	.main1
 	{
-		width: 90%;
+		width: 100%;
+	}
+
+	.G_M1
+	{
+		width: 100%;
+	}
+
+	.barre_G1
+	{
+		width: 260px;
+		height: 40px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 260px;
+		height: 40px;
+		margin-top: 5px;
+	}
+}
+
+/* Desktop small */
+@media all and (min-width: 1280px) and (max-width: 1439px)
+{
+	.main1
+	{
+		width: 100%;
 	}
 
 	.box_barres
@@ -183,26 +225,39 @@
 
 	.barre_G1
 	{
-		width: 170px;
+		width: 250px;
 		height: 40px;
 		margin-top: 5px;
 	}
 
 	.barre_D1
 	{
-		width: 170px;
+		width: 250px;
+		height: 40px;
+		margin-top: 5px;
+	}
+}
+
+/* Desktop XS */
+@media all and (min-width: 1024px) and (max-width: 1279px)
+{
+	.box_barres
+	{
+	    margin-bottom: 20px;
+	}
+
+	.barre_G1
+	{
+		width: 200px;
 		height: 40px;
 		margin-top: 5px;
 	}
 
-	.titre_menu_1
+	.barre_D1
 	{
-		font-size: nth($font-size, 3);
-	}
-
-	.entrees, .plats_principaux, .desserts
-	{
-		font-size: nth($font-size, 4);
+		width: 200px;
+		height: 40px;
+		margin-top: 5px;
 	}
 
 	.noms
@@ -212,7 +267,7 @@
 }
 
 /* Version tablette */
-@media all and (max-width: 768px)
+@media all and (min-width: 768px) and (max-width: 1023px)
 {
 	.noms
 	{
@@ -233,28 +288,47 @@
 		font-weight: bold;
 	}
 
-	.main1
-	{
-		width: 90%;
-	}
-
 	.barre_G1
 	{
-		width: 110px;
+		width: 155px;
 		height: 25px;
 		margin-top: 5px;
 	}
 
 	.barre_D1
 	{
-		width: 110px;
+		width: 155px;
 		height: 25px;
 		margin-top: 5px;
 	}
+
+	.entrees, .plats_principaux, .desserts
+	{
+		font-size: nth($font-size, 4);
+	}
+
+	.noms
+	{
+		font-size: $f-size_noms-plats/1.2;
+	}
+
+	.fin
+	{
+		padding-top: 0px;
+		margin-top: -20px;
+		font-size: nth($font-size, 4);
+	}
+
+	.note_size_small
+	{
+		font-size: 2rem;
+		padding-top: 15px;
+		padding-right: 15px;
+	}
 }
 
-/* Version mobile */
-@media all and (max-width: 767px)
+/* Version tablette mid */
+@media all and (min-width: 651px) and (max-width: 767px)
 {
 	.M_Menu
 	{
@@ -262,9 +336,84 @@
 		padding: 5px;
 	}
 
-	.main1
+	.note_size1
 	{
-		width: 100%;
+		font-size: nth($font-size, 1)/1.4;
+		margin-bottom: -35px;
+	}
+
+	.titre_menu_1
+	{
+		font-size: nth($font-size, 3);
+	}
+
+	.barre_G1
+	{
+		width: 220px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 220px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.entrees, .plats_principaux, .desserts
+    {
+        font-size: nth($font-size, 4);
+    }
+}
+
+/* Version tablette small */
+@media all and (min-width: 551px) and (max-width: 650px)
+{
+	.M_Menu
+	{
+		width: 80%;
+		padding: 5px;
+	}
+
+	.note_size1
+	{
+		font-size: nth($font-size, 1)/1.4;
+		margin-bottom: -35px;
+	}
+
+	.titre_menu_1
+	{
+		font-size: nth($font-size, 3);
+	}
+
+	.barre_G1
+	{
+		width: 180px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 180px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.entrees, .plats_principaux, .desserts
+    {
+        font-size: nth($font-size, 4);
+    }
+}
+
+/* Version mobile */
+@media all and (min-width: 425px) and (max-width: 550px)
+{
+	.M_Menu
+	{
+		width: 80%;
+		padding: 5px;
 	}
 
 	.note_size1
@@ -280,14 +429,73 @@
 
 	.barre_G1
 	{
-		width: 65px;
+		width: 120px;
 		height: 20px;
 		margin-top: 5px;
 	}
 
 	.barre_D1
 	{
-		width: 65px;
+		width: 120px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.entrees, .plats_principaux, .desserts
+	{
+		font-size: nth($font-size, 4);
+	}
+
+	.noms
+	{
+		font-size: $f-size_noms-plats/1.2;
+	}
+
+	.fin
+	{
+		padding-top: 0px;
+		margin-top: -20px;
+		font-size: nth($font-size, 4);
+	}
+
+	.note_size_small
+	{
+		font-size: 2rem;
+		padding-top: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* Version mobile small */
+@media all and (min-width: 320px) and (max-width: 424px)
+{
+	.M_Menu
+	{
+		width: 80%;
+		padding: 5px;
+	}
+
+	.note_size1
+	{
+		font-size: nth($font-size, 1)/1.5;
+		margin-bottom: -35px;
+	}
+
+	.titre_menu_1
+	{
+		font-size: nth($font-size, 3);
+	}
+
+	.barre_G1
+	{
+		width: 80px;
+		height: 20px;
+		margin-top: 5px;
+	}
+
+	.barre_D1
+	{
+		width: 80px;
 		height: 20px;
 		margin-top: 5px;
 	}
