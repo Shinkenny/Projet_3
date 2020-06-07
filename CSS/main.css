@@ -364,7 +364,7 @@ main {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  padding: 0px 25px;
+  padding: 0px 35px;
   margin-top: -20px; }
 
 .plat {
@@ -572,7 +572,8 @@ main {
     font-size: 1rem; }
 
   .noms {
-    font-size: 0.8333333333rem; }
+    font-size: 0.8333333333rem;
+    padding: 0px 15px; }
 
   .fin {
     padding-top: 0px;
@@ -610,7 +611,8 @@ main {
     font-size: 1rem; }
 
   .noms {
-    font-size: 0.8333333333rem; }
+    font-size: 0.8333333333rem;
+    padding: 0px 15px; }
 
   .fin {
     padding-top: 0px;
@@ -637,6 +639,9 @@ main {
   background: linear-gradient(to left, #8f5aff, #ed8c18);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.noms {
+  padding: 0px 55px; }
 
 .box_barres2 {
   width: 100%;

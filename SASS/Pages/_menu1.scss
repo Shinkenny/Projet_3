@@ -122,7 +122,7 @@
 	display: flex;
 	justify-content: space-between;
 	font-size: $f-size_noms-plats;
-	padding: 0px 25px;
+	padding: 0px 35px;
 	margin-top: -20px;
 }
 
@@ -449,6 +449,7 @@
 	.noms
 	{
 		font-size: $f-size_noms-plats/1.2;
+		padding: 0px 15px;
 	}
 
 	.fin
@@ -508,6 +509,7 @@
 	.noms
 	{
 		font-size: $f-size_noms-plats/1.2;
+		padding: 0px 15px;
 	}
 
 	.fin
